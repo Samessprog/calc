@@ -1,0 +1,15 @@
+body {
+
+    background-color: black;
+    color: aliceblue;
+}
+.Welcome-Name {
+
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 3px;
+
+}
+label { margin-left: 20px; }
+label:first-child { margin-left: 0;}
