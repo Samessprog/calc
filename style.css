@@ -2,14 +2,62 @@ body {
 
     background-color: black;
     color: aliceblue;
+
+}
+
+#ErrorOl {
+
+    margin: 20px; 
+    padding: 10px 10px 10px 30px; 
+    border-radius: 10px; 
+    background-color: 
+    rgb(206, 55, 55); 
+    width:350px;
+    letter-spacing: 2px;
+    
 }
 .Welcome-Name {
 
-    text-align: center;
     font-size: 40px;
-    font-weight: 600;
-    letter-spacing: 3px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.calculator-date {
+    font-size: 15px;
+    margin-left: 10px;
 
 }
-label { margin-left: 20px; }
-label:first-child { margin-left: 0;}
+.date-name {
+    margin-left: 10px;
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+.rate-result {
+    background-color: rgb(202, 160, 104);
+    color: black;
+    margin: 20px; 
+    padding: 10px;
+    border-radius: 5px;
+    width:300px; ;
+
+}
+.ENTER {
+
+    font-size: 17px;
+    color: black;
+    background-color: bisque ;
+    border-radius: 5px;
+    transition: all, 2s, ease-in-out;
+    
+
+}
+
+.ENTER:hover {
+
+    border: 2px solid green;
+    cursor: pointer;
+    background-color: rgb(33, 155, 84);
+
+}
+
+
