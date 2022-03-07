@@ -28,6 +28,11 @@ $procent = @$_REQUEST['procent'];
 
     }
 
+    if ($credit_Time < 0  || $procent  < 0 ) {
+        $message [] = 'credit time or procent is under 0!';
+
+    }
+
 
     //jezeni nie puste pola
     if (empty ($message)) {

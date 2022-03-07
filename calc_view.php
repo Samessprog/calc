@@ -28,11 +28,11 @@
          <label class="date-name"><i>Amount</i></label> 
          <input class="calculator-date" type="number" name="Amount" placeholder="Amount" value="<?php print($Amount)?>" min="0"  /> 
 
-         <label class="date-name" ><i>Time:</i></label>       
-         <input  class="calculator-date"  type="number" name="time" placeholder="credit time"  value="<?php print($credit_Time)?>"  min="1" max="100" /> 
+         <label class="date-name" ><i>Years:</i></label>       
+         <input  class="calculator-date"  type="number" name="time" placeholder="credit time"  value="<?php print($credit_Time)?>"   /> 
 
          <label class="date-name" ><i>Procent:</i></label> 
-         <input  class="calculator-date"  type="number" name="procent"  placeholder="interest"  value="<?php print($procent)?>" min="0" max="100"/> 
+         <input  class="calculator-date"  type="number" name="procent"  placeholder="interest"  value="<?php print($procent)?>" /> 
 
          <input class="ENTER"  type="submit" value="ENTER!"/>  <br/>
     
