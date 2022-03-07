@@ -56,11 +56,11 @@
     }
     
     
-    if (isset($monthly_Rate )&& isset($year_Rate)) {
+    if (isset($rate )&& isset($year_Rate)) {
 ECHO <<< END
         <div class = "rate-result">
         annual installment: $year_Rate </br>
-        monthly annual: $monthly_Rate
+        monthly annual: $rate
         </div>
 END;
     }

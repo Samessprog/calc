@@ -40,12 +40,12 @@ $procent = @$_REQUEST['procent'];
         $Amount= intval($Amount);
         $credit_Time= floatval($credit_Time);
         $procent = floatval($procent);
+        $years = $credit_Time * 12;
 
-        $year_result = ($Amount + ($Amount * $procent)) / $credit_Time;
-        $monthly_result = (($Amount + ($Amount * $procent)) / $credit_Time)/12;
+        $result = (($Amount + ($Amount * $procent)) / $credit_Time)/12;
 
-        $monthly_Rate =  number_format((float) $monthly_result, 2, '.', '');  
-        $year_Rate = number_format((float) $year_result, 2, '.', '');
+        $rate =  number_format((float) $result, 2, '.', '');  
+        $year_Rate = $rate*12;
        
     }
 
