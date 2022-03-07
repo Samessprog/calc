@@ -2,27 +2,24 @@
 
 require_once dirname(__FILE__).'/../config.php';
 
-
-$number = $_REQUEST['number'];
-$years = $_REQUEST['years'];
-$procent = $_REQUEST['procent'];
-
-
+$Amount = @$_REQUEST['Amount'];
+$credit_Time = @$_REQUEST['time'];
+$procent = @$_REQUEST['procent'];
 
 //sprawdzeni czy podano dane czy ktos wpisał odręcznie link 
 
-    if ( ! (isset($procent) && isset($years) && isset($number))) {
+    if ( ! (isset($procent) && isset($credit_Time) && isset($Amount))) {
         $message [] = 'Incorrect application call!';
         
     }
 
     //sprawdzanie czy nie podano pustego pola!
-    if ($number == "") {
-        $message [] = 'The number was not specified!';
+    if ($Amount== "") {
+        $message [] = 'The Amountwas not specified!';
 
     }
-    if ($years == "") {
-        $message [] = 'The number of years was not specifed!';
+    if ($credit_Time == "") {
+        $message [] = 'The time of credit time was not specifed!';
 
     }
 
@@ -32,25 +29,20 @@ $procent = $_REQUEST['procent'];
     }
 
 
-
     //jezeni nie puste pola
     if (empty ($message)) {
         
-        $number = intval($number);
-        $years = floatval($years);
+        $Amount= intval($Amount);
+        $credit_Time= floatval($credit_Time);
         $procent = floatval($procent);
 
-       $rate= ($number * $procent) ; 
+        $year_result = ($Amount + ($Amount * $procent)) / $credit_Time;
+        $monthly_result = (($Amount + ($Amount * $procent)) / $credit_Time)/12;
 
-
-
-
+        $monthly_Rate =  number_format((float) $monthly_result, 2, '.', '');  
+        $year_Rate = number_format((float) $year_result, 2, '.', '');
+       
     }
-
-
-
-
-
 
     include 'calc_view.php';
 ?>

@@ -26,13 +26,13 @@
     <form  action="<?php print(_APP_URL);?>/app/calc_head.php" method="post">
 
          <label class="date-name"><i>Amount</i></label> 
-         <input class="calculator-date" type="number" name="number" placeholder="Amount" value="<?php print($number)?>" min="0"  /> 
+         <input class="calculator-date" type="number" name="Amount" placeholder="Amount" value="<?php print($Amount)?>" min="0"  /> 
 
-         <label class="date-name" ><i>years:</i></label>       
-         <input  class="calculator-date"  type="number" name="years" placeholder="years"  value="<?php print($years)?>"  min="1" max="100" /> 
+         <label class="date-name" ><i>Time:</i></label>       
+         <input  class="calculator-date"  type="number" name="time" placeholder="credit time"  value="<?php print($credit_Time)?>"  min="1" max="100" /> 
 
          <label class="date-name" ><i>Procent:</i></label> 
-         <input  class="calculator-date"  type="number" name="procent"  placeholder="interest"  value="<?php print($procent)?>" min="0" /> 
+         <input  class="calculator-date"  type="number" name="procent"  placeholder="interest"  value="<?php print($procent)?>" min="0" max="100"/> 
 
          <input class="ENTER"  type="submit" value="ENTER!"/>  <br/>
     
@@ -55,26 +55,18 @@
         }
     }
     
-
-    if (isset($rate)) {
+    
+    if (isset($monthly_Rate )&& isset($year_Rate)) {
 ECHO <<< END
         <div class = "rate-result">
-        Your rate is :$rate
+        annual installment: $year_Rate </br>
+        monthly annual: $monthly_Rate
         </div>
 END;
     }
 
 
 ?>
-
-
-
-
-
-
-
-
-
 
 
 
