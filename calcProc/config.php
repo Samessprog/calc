@@ -5,5 +5,17 @@ define('_APP_ROOT', '/calcProc');
 define('_APP_URL', _SERVER_URL._APP_ROOT);
 define("_ROOT_PATH", dirname(__FILE__));
 
+?> 
 
-?>
+
+
+<?php
+// proba klas :<
+//class Config{
+//	public $root_path;
+//	public $server_name;
+//	//public $server_url;
+//	public $app_root;
+//	public $app_url; 
+//}
+//?>
