@@ -1,10 +1,37 @@
+/*
+	SCHOOL DRIVE
+	// DAMIAN SZEWCZYK
+	// WWW.DAMIANSZEWCZYK.PL
+	WSZELKIE PRAWA ZASTRZEŻONE
+*/
+
+
+.footer {
+	width: 920px;
+	float: left;
+	background: #B4ABA2;
+	padding: 5px 40px 5px 40px;
+	margin-top: 30px;
+	color: #ddd;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	-moz-border-radius-bottomleft: 20px;
+	-moz-border-radius-bottomright: 20px;
+}
+	
+.m-t-50px {
+	margin-top: 50px;
+
+}
 body {
+
     background-color: black;
     color: aliceblue;
 
 }
 
 #ErrorOl {
+
     margin: 20px; 
     padding: 10px 10px 10px 30px; 
     border-radius: 10px; 
@@ -16,10 +43,10 @@ body {
     
 }
 .Welcome-Name {
+
     font-size: 40px;
     text-align: center;
     margin-bottom: 10px;
-    
 }
 .calculator-date {
     font-size: 15px;
@@ -41,6 +68,7 @@ body {
 
 }
 .ENTER {
+
     font-size: 17px;
     color: black;
     background-color: bisque ;
@@ -50,7 +78,10 @@ body {
 }
 
 
+
+
 .ENTER:hover {
+
     border: 2px solid green;
     cursor: pointer;
     background-color: rgb(33, 155, 84);
